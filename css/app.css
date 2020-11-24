@@ -1,0 +1,182 @@
+:root {
+  --blue-1: #002341;
+  --blue-2: #23618d;
+  --white: #ffffff;
+}
+
+.header {
+  position: relative;
+  min-height: 100vh;
+  background-image: url("../assets/img/bg/bg-3.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header .overlay {
+  position: absolute;
+  width: 100%;
+  height: 87%;
+  top: 0px;
+  left: 0px;
+  background: var(--blue-1);
+  background: linear-gradient(95deg, var(--blue-1) 40%, var(--blue-2) 100%);
+  -webkit-transform: skewY(-12deg);
+  transform: skewY(-12deg);
+  -webkit-transform-origin: 0;
+  transform-origin: 0;
+  z-index: -12;
+}
+
+.header .overlay :nth-child(1) {
+  position: absolute;
+  width: 33.33333%;
+  width: calc(100% / 2);
+  top: 0;
+  left: 16.66666%;
+  left: calc(calc(100% / 3) / 2);
+  right: auto;
+  background: var(--blue-1);
+  background: linear-gradient(95deg, var(--blue-1) 40%, var(--blue-2) 100%);
+  height: 200px;
+}
+
+.header .overlay :nth-child(2) {
+  position: absolute;
+  width: 33.33333%;
+  top: 20%;
+  left: 66.5%;
+  background: var(--blue-1);
+  background: linear-gradient(95deg, var(--blue-1) 40%, var(--blue-2) 100%);
+  height: 200px;
+}
+
+.header .overlay :nth-child(3) {
+  position: absolute;
+  width: 33.33333%;
+  width: calc(100% / 3);
+  bottom: 0;
+  background: var(--blue-1);
+  background: linear-gradient(95deg, var(--blue-1) 40%, var(--blue-2) 100%);
+  position: absolute;
+  height: 155px;
+  left: 3%;
+}
+
+.header .overlay :nth-child(4) {
+  position: absolute;
+  width: 20%;
+  bottom: -10%;
+  background: var(--blue-1);
+  background: linear-gradient(95deg, var(--blue-1) 40%, var(--blue-2) 100%);
+  position: absolute;
+  height: 155px;
+  left: 0;
+}
+
+.avatar {
+  font-size: 1rem;
+  display: inline-flex;
+  width: 48px;
+  height: 48px;
+  color: #fff;
+  border-radius: 0.375rem;
+  background-color: #adb5bd;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar.rounded-circle img,
+.rounded-circle {
+  border-radius: 50% !important;
+}
+
+.avatar img {
+  width: 100%;
+  border-radius: 0.375rem;
+}
+
+.bg-1 {
+  background: linear-gradient(321.69deg, #f03b9e 0%, #ff7045 100%);
+}
+
+.bg-2 {
+  background: linear-gradient(321.69deg, rgb(76, 55, 117) 0%, #162a5a 100%);
+}
+
+.bg-3 {
+  background: linear-gradient(321.69deg, #ff7045 0%, #f38e2c 100%);
+}
+
+.bg-4 {
+  background: linear-gradient(321.69deg, #12b8c5 0%, #162a5a 100%);
+}
+
+.bg-5 {
+  background: linear-gradient(321.69deg, #4481eb 0%, #04befe 100%);
+  /* background: linear-gradient(321.69deg, #38a4ff 0%, #2d75c9 100%); */
+}
+
+.bg-6 {
+  background: linear-gradient(321.69deg, #002341 0%, #2b3054 100%);
+}
+
+.subtopic-image--topic-1 {
+  background-image: linear-gradient(
+      to bottom,
+      #f03b9e,
+      rgba(0, 255, 0, 0) 85%,
+      transparent 85%
+    ),
+    url(https://picsum.photos/640/360) !important;
+}
+
+.subtopic-image--topic-2 {
+  background-image: linear-gradient(
+      to bottom,
+      #162a5a,
+      rgba(0, 255, 0, 0) 85%,
+      transparent 85%
+    ),
+    url(https://picsum.photos/640/360) !important;
+}
+
+.subtopic-image--topic-3 {
+  background-image: linear-gradient(
+      to bottom,
+      #ff7045,
+      rgba(0, 255, 0, 0) 85%,
+      transparent 85%
+    ),
+    url(https://picsum.photos/640/360) !important;
+}
+
+.subtopic-image--topic-4 {
+  background-image: linear-gradient(
+      to bottom,
+      #12b8c5,
+      rgba(0, 255, 0, 0) 85%,
+      transparent 85%
+    ),
+    url(https://picsum.photos/640/360) !important;
+}
+
+.subtopic-image--topic-5 {
+  background-image: linear-gradient(
+      to bottom,
+      #4481eb,
+      rgba(0, 255, 0, 0) 85%,
+      transparent 85%
+    ),
+    url(https://picsum.photos/640/360) !important;
+}
+
+.subtopic-image--topic-6 {
+  background-image: linear-gradient(
+      to bottom,
+      #002341,
+      rgba(0, 255, 0, 0) 85%,
+      transparent 85%
+    ),
+    url(https://picsum.photos/640/360) !important;
+}
