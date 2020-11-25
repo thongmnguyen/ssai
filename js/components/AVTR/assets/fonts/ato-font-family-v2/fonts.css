@@ -1,0 +1,243 @@
+/*=======================================
+        Typography - Icons - including headings
+ =======================================*/
+
+
+@font-face {
+  font-family: "ato-font-family-v2";
+  src: url("fonts/ato-font-family-v2.eot");
+  src: url("fonts/ato-font-family-v2.eot?#iefix") format("embedded-opentype"), 
+  url("fonts/ato-font-family-v2.woff") format("woff"), 
+  url("fonts/ato-font-family-v2.ttf") format("truetype"), 
+  url("fonts/ato-font-family-v2.svg#ato-font-family-v2") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+
+[data-icon]:before {
+  font-family: "ato-font-family-v2";
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "ato-font-family-v2";
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1em; }
+
+.icon-strategic-alignment:before {
+  content: "\41"; }
+
+.icon-change-log:before {
+  content: "\42"; }
+
+.icon-colours:before {
+  content: "\43"; }
+
+.icon-component:before {
+  content: "\44"; }
+
+.icon-ato-crest-and-badge:before {
+  content: "\45"; }
+
+.icon-visual-design-guidelines:before {
+  content: "\46"; }
+
+.icon-architecture:before {
+  content: "\47"; }
+
+.icon-downloads:before {
+  content: "\48"; }
+
+.icon-iconography:before {
+  content: "\49"; }
+
+.icon-other-branding:before {
+  content: "\4a"; }
+
+.icon-ui-patterns:before {
+  content: "\4b"; }
+
+.icon-release-plan:before {
+  content: "\4c"; }
+
+.icon-roadmap:before {
+  content: "\4d"; }
+
+.icon-ui-framework:before {
+  content: "\4e"; }
+
+.icon-Architecture:before {
+  content: "\4f"; }
+
+.icon-user:before {
+  content: "\E0AB"; }
+
+.icon-info:before {
+  content: "\E0A0"; }
+
+.icon-home:before {
+  content: "\E08F"; }
+
+.icon-radio-btn:before {
+  content: "r"; }
+
+.icon-tick-filled:before {
+  content: "\E0AA"; }
+
+.icon-user-account:before {
+  content: "\E01B"; }
+
+.icon-minus:before {
+  content: "m"; }
+
+.icon-plus:before {
+  content: "\E0A6"; }
+
+.icon-logo-ato:before {
+  content: "\E0A3"; }
+
+.icon-checkbox-unticked:before {
+  content: "\E098"; }
+
+.icon-checkbox-ticked:before {
+  content: "\E099"; }
+
+.icon-checkbox-disabled:before {
+  content: "\E09A"; }
+
+.icon-close:before {
+  content: "\E0AE"; }
+
+.icon-exit:before {
+  content: "\E096"; }
+
+.icon-error-alert:before {
+  content: "\E095"; }
+
+.icon-error:before {
+  content: "\E08D"; }
+
+.icon-accordion-expand:before {
+  content: "\E09E"; }
+
+.icon-arrow-left:before {
+  content: "\E0A2"; }
+
+.icon-arrow-right:before {
+  content: "\E0A1"; }
+
+.icon-accordion-collapse:before {
+  content: "\E09F"; }
+
+.icon-accordion-click:before {
+  content: "\E0A1"; }
+
+.listStyle li:before {
+  content: "\E0A1";
+  font-family: 'ato-font-family-v2';
+  font-size: 0.8em; }
+
+.icon-tick:before {
+  content: "\E0AC"; }
+
+.icon-tooltip:before {
+  content: "\E085"; }
+
+.icon-warning-sign-circle:before {
+  content: "\E0AD"; }
+
+.icon-warning-sign-nocircle:before {
+  content: "\E0A7"; }
+
+.icon-menu:before {
+  content: "\E0A9"; }
+
+.icon-warning-sign:before {
+  content: "\E0AD"; }
+
+.icon-radio-btn-disabled:before {
+  content: "\E0A8"; }
+
+.icon-danger:before {
+  content: "\E0A4"; }
+
+.icon-print:before {
+  content: "\E0B0"; }
+
+.icon-calendar:before {
+  content: "\E0AF"; }
+
+.icon-file:before {
+  content: "\E0A5"; }
+
+.icon-login:before {
+  content: "\E0AB"; }
+
+.icon-pre-fill:before {
+  content: "\E08C"; }
+
+.icon-ato-information:before {
+  content: "\E090"; }
+
+.icon-help:before {
+  content: "\E08B"; }
+
+.icon-flag:before {
+  content: "\E08E"; }
+
+.icon-external-link:before {
+  content: "\E0B1"; }
+
+.icon-comment:before {
+  content: "\E0B2"; }
+
+.icon-star:before {
+  content: "\E0B3"; }
+
+.icon-clip:before {
+  content: "\E0B4"; }
+
+.icon-search:before {
+  content: "\E0B5"; }
+
+.icon-tools-calculators:before {
+  content: "\E0B6"; }
+
+.icon-edit:before {
+  content: "\E0B7"; }
+
+.icon-delete:before {
+  content: "\E0B8"; }
+
+.icon-view:before {
+  content: "\E0BB"; }
+
+.icon-calculator:before {
+  content: "\E0B9"; }
+
+.icon-calculator-circle:before {
+  content: "\E0BA"; }
+
+.icon-pdf:before {
+  content: "\E0C0"; }
+
+.icon-download:before {
+  content: "\E0C4"; }
+
+
+

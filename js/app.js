@@ -1,22 +1,20 @@
-var currentTopic = 1;
 
-const Fragment = {
-    functional: true,
-    render: (h, ctx) => ctx.children
-}
+const Test = {
+    template: '<div>Test</div>'
+} 
 
-Vue.component('card-topic', {
-    template: '#card--topic',
-    data: function () {
-        return {
-            count: 0
-        }
-    }
+const routes = [{
+    path: '/',
+    component: window.httpVueLoader('./js/components/pages/Home.vue')
+}]
+
+const router = new VueRouter({
+    routes: routes
 })
 
 var app = new Vue({
     el: '#app',
-    router: window.router,
+    router: router,
     mounted: function () {
         console.log('mounted')
     }

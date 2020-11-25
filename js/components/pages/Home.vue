@@ -152,12 +152,6 @@
 
 <script>
 module.exports = {
-  components: {
-    Card: window.httpVueLoader("/js/components/common/Card.vue"),
-  },
-  directives: {
-    Frag,
-  },
   data: function () {
     return {
       currentTopicId: 1,
