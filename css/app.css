@@ -74,28 +74,6 @@
   left: 0;
 }
 
-.avatar {
-  font-size: 1rem;
-  display: inline-flex;
-  width: 48px;
-  height: 48px;
-  color: #fff;
-  border-radius: 0.375rem;
-  background-color: #adb5bd;
-  align-items: center;
-  justify-content: center;
-}
-
-.avatar.rounded-circle img,
-.rounded-circle {
-  border-radius: 50% !important;
-}
-
-.avatar img {
-  width: 100%;
-  border-radius: 0.375rem;
-}
-
 .bg-1 {
   background: linear-gradient(321.69deg, #f03b9e 0%, #ff7045 100%);
 }
