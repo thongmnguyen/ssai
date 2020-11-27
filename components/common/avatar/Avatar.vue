@@ -119,7 +119,6 @@
 <script>
 module.exports = {
   props: ["avatar"],
-
   data: function () {
     return {};
   },
@@ -197,5 +196,6 @@ module.exports = {
         : this.avatar.graphicType;
     },
   },
+
 };
 </script>

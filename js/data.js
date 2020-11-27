@@ -77,7 +77,7 @@ window.course = {
             id: 3,
             title: "Safe and secure workplaces",
             subtitle: "10 mins reading",
-            desc: "Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text",
+            desc: "Some quick example text to build on the card title and make up the bulk of the card's content.",
             subtopics: [{
                     id: 1,
                     title: "Measures to maintian security",

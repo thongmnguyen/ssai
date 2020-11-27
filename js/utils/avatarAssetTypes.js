@@ -4094,27 +4094,27 @@ const accessoriesTypes = {
   },
   Kurt: {
     val: Kurt,
-    requiredToken: 600
+    requiredToken: 0
   },
   Prescription01: {
     val: Prescription01,
-    requiredToken: 600
+    requiredToken: 0
   },
   Prescription02: {
     val: Prescription02,
-    requiredToken: 600
+    requiredToken: 0
   },
   Round: {
     val: Round,
-    requiredToken: 600
+    requiredToken: 0
   },
   Sunglasses: {
     val: Sunglasses,
-    requiredToken: 600
+    requiredToken: 0
   },
   Wayfarers: {
     val: Wayfarers,
-    requiredToken: 600
+    requiredToken: 0
   }
 };
 
@@ -4126,24 +4126,24 @@ const facialHairTypes = {
 
   MoustacheFancy: {
     val: MoustacheFancy,
-    requiredToken: 200
+    requiredToken: 0
   },
   MoustacheMagnum: {
     val: MoustacheMagnum,
-    requiredToken: 500
+    requiredToken: 0
   },
   BeardLight: {
     val: BeardLight,
-    requiredToken: 1000
+    requiredToken: 0
   },
   BeardMedium: {
     val: BeardMedium,
-    requiredToken: 2000
+    requiredToken: 0
   },
 
   BeardMajestic: {
     val: BeardMajestic,
-    requiredToken: 2500
+    requiredToken: 0
   }
 };
 
@@ -4154,51 +4154,51 @@ const eyebrowTypes = {
   },
   Angry: {
     val: Angry,
-    requiredToken: 100
+    requiredToken: 0
   },
   AngryNatural: {
     val: AngryNatural,
-    requiredToken: 100
+    requiredToken: 0
   },
   DefaultNatural: {
     val: DefaultNatural,
-    requiredToken: 100
+    requiredToken: 0
   },
   FlatNatural: {
     val: FlatNatural,
-    requiredToken: 200
+    requiredToken: 0
   },
   FrownNatural: {
     val: FrownNatural,
-    requiredToken: 200
+    requiredToken: 0
   },
   RaisedExcited: {
     val: RaisedExcited,
-    requiredToken: 200
+    requiredToken: 0
   },
   RaisedExcitedNatural: {
     val: RaisedExcitedNatural,
-    requiredToken: 300
+    requiredToken: 0
   },
   SadConcerned: {
     val: SadConcerned,
-    requiredToken: 300
+    requiredToken: 0
   },
   SadConcernedNatural: {
     val: SadConcernedNatural,
-    requiredToken: 400
+    requiredToken: 0
   },
   UnibrowNatural: {
     val: UnibrowNatural,
-    requiredToken: 500
+    requiredToken: 0
   },
   UpDown: {
     val: UpDown,
-    requiredToken: 600
+    requiredToken: 0
   },
   UpDownNatural: {
     val: UpDownNatural,
-    requiredToken: 600
+    requiredToken: 0
   }
 };
 
@@ -4209,39 +4209,39 @@ const clothesType = {
   },
   BlazerShirt: {
     val: BlazerShirt,
-    requiredToken: 100
+    requiredToken: 0
   },
   BlazerSweater: {
     val: BlazerSweater,
-    requiredToken: 100
+    requiredToken: 0
   },
   CollarSweater: {
     val: CollarSweater,
-    requiredToken: 200
+    requiredToken: 0
   },
   GraphicShirt: {
     val: GraphicShirt,
-    requiredToken: 300
+    requiredToken: 0
   },
   Hoodie: {
     val: Hoodie,
-    requiredToken: 300
+    requiredToken: 0
   },
   Overall: {
     val: Overall,
-    requiredToken: 400
+    requiredToken: 0
   },
   ShirtCrewNeck: {
     val: ShirtCrewNeck,
-    requiredToken: 500
+    requiredToken: 0
   },
   ShirtScoopNeck: {
     val: ShirtScoopNeck,
-    requiredToken: 600
+    requiredToken: 0
   },
   ShirtVNeck: {
     val: ShirtVNeck,
-    requiredToken: 600
+    requiredToken: 0
   }
 };
 
@@ -4257,43 +4257,43 @@ const eyeTypes = {
   },
   Cry: {
     val: Cry,
-    requiredToken: 100
+    requiredToken: 0
   },
   Dizzy: {
     val: Dizzy,
-    requiredToken: 200
+    requiredToken: 0
   },
   EyeRoll: {
     val: EyeRoll,
-    requiredToken: 400
+    requiredToken: 0
   },
   Happy: {
     val: Happy,
-    requiredToken: 500
+    requiredToken: 0
   },
   Hearts: {
     val: Hearts,
-    requiredToken: 1000
+    requiredToken: 0
   },
   Side: {
     val: Side,
-    requiredToken: 1500
+    requiredToken: 0
   },
   Squint: {
     val: Squint,
-    requiredToken: 2000
+    requiredToken: 0
   },
   Surprised: {
     val: Surprised,
-    requiredToken: 2000
+    requiredToken: 0
   },
   Wink: {
     val: Wink,
-    requiredToken: 2000
+    requiredToken: 1000
   },
   WinkWacky: {
     val: WinkWacky,
-    requiredToken: 2500
+    requiredToken: 2000
   }
 };
 
@@ -4305,47 +4305,47 @@ const mouthTypes = {
 
   Concerned: {
     val: Concerned,
-    requiredToken: 100
+    requiredToken: 0
   },
   Disbelief: {
     val: Disbelief,
-    requiredToken: 200
+    requiredToken: 0
   },
   Eating: {
     val: Eating,
-    requiredToken: 300
+    requiredToken: 0
   },
   Grimace: {
     val: Grimace,
-    requiredToken: 300
+    requiredToken: 0
   },
   Sad: {
     val: Sad,
-    requiredToken: 400
+    requiredToken: 0
   },
   ScreamOpen: {
     val: ScreamOpen,
-    requiredToken: 400
+    requiredToken: 0
   },
   Serious: {
     val: Serious,
-    requiredToken: 500
+    requiredToken: 0
   },
   Smile: {
     val: Smile,
-    requiredToken: 500
+    requiredToken: 0
   },
   Tongue: {
     val: Tongue,
-    requiredToken: 1000
+    requiredToken: 0
   },
   Twinkle: {
     val: Twinkle,
-    requiredToken: 2000
+    requiredToken: 1500
   },
   Vomit: {
     val: Vomit,
-    requiredToken: 2500
+    requiredToken: 2000
   }
 };
 

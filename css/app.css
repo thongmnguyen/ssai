@@ -99,6 +99,65 @@
   background: linear-gradient(321.69deg, #002341 0%, #2b3054 100%);
 }
 
+.text-color-1 {
+  color: #f03b9e;
+}
+
+.text-color-2 {
+  color: rgb(76, 55, 117);
+}
+
+.text-color-3 {
+  color: #ff7045;
+}
+
+.text-color-4 {
+  color: #12b8c5;
+}
+
+.text-color-5 {
+  color: #4481eb;
+}
+
+.text-color-6 {
+  color: #2b3054;
+}
+
+.bg-7 {
+  background: -moz-linear-gradient(
+    110deg,
+    #12b8c5 0%,
+    #162a5a 50%,
+    #ff7045 50%,
+    #f03b9e 100%
+  );
+  background: -webkit-linear-gradient(
+    110deg,
+    #12b8c5 0%,
+    #162a5a 50%,
+    #ff7045 50%,
+    #f03b9e 100%
+  );
+  background: linear-gradient(
+    110deg,
+    #12b8c5 0%,
+    #162a5a 50%,
+    #ff7045 50%,
+    #f03b9e 100%
+  );
+  background: linear-gradient(
+    110deg,
+    #12b8c5 0%,
+    #162a5a 50%,
+    #ff7045 50%,
+    #f03b9e 100%
+  );
+}
+
+.bg-8 {
+  background: #002341;
+}
+
 .subtopic-image--topic-1 {
   background-image: linear-gradient(
       to bottom,
@@ -157,4 +216,60 @@
       transparent 85%
     ),
     url(https://picsum.photos/640/360) !important;
+}
+
+.ribbon {
+  position: absolute;
+  top: 0.75rem;
+  right: -0.25rem;
+  z-index: 1;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  color: #002341;
+  text-align: center;
+  text-transform: uppercase;
+  background: #206bc4;
+  border-color: #206bc4;
+}
+
+.ribbon:before {
+  position: absolute;
+  right: 0;
+  bottom: 100%;
+  width: 0;
+  height: 0;
+  content: "";
+  filter: brightness(70%);
+  border: 0.125rem solid;
+  border-color: inherit;
+  border-top-color: transparent;
+  border-right-color: transparent;
+}
+
+.ribbon-bookmark:after {
+  position: absolute;
+  top: 0;
+  right: 100%;
+  display: block;
+  width: 0;
+  height: 0;
+  content: "";
+  border: 1rem solid;
+  border-color: inherit;
+  border-right-width: 0;
+  border-left-color: transparent;
+  border-left-width: 0.5rem;
+}
+
+.ribbon-bookmark {
+  padding-left: 0.25rem;
+}
+
+.ribbon.bg-orange {
+  border-color: white;
+}
+.bg-orange {
+  background: white;
 }

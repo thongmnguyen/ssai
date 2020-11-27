@@ -18,10 +18,8 @@
                   <a class="navbar-brand m-0 p-0" role="button" href="#">
                     <img
                       src="./assets/img/logo/l_n_d_logo.png"
-                      class="d-inline-block mr-2 zoom-in shadow"
+                      class="d-inline-block zoom-in shadow w-100"
                       alt="learning and development logo"
-                      width="55"
-                      height="55"
                       style="border: 1px solid white"
                     />
                   </a>
@@ -45,18 +43,20 @@
                     <span class="d-none d-lg-block text-white ml-2">
                       <span class="text-default">John Doe</span>
                       <a
+                        class="d-block"
                         tabindex="0"
                         role="button"
-                        data-toggle="popover"
-                        title="Dismissible popover"
-                        data-content="And "
+                        data-placement="bottom"
+                        data-toggle="tooltip"
+                        data-html="true"
+                        title="<div class='text-left'>These are tokens. <br>Tokens are used to unlock some exclusive avatar accessories.</div>"
                       >
                         <small
                           class="d-block mt-1 py-1 px-2 shadow"
                           style="background-color: #002341"
                         >
                           <span class="fas fa-star text-warning"></span>
-                          <span class="font-weight-bold">2000</span>
+                          <span class="font-weight-bold">{{ tokens }}</span>
                           <span class="fas fa-plus text-white-50 ml-1"></span>
                         </small>
                       </a>
@@ -83,7 +83,9 @@
                     :key="topic.id"
                   >
                     <div class="card-body">
-                      <h5 class="card-title">{{ topic.title }}</h5>
+                      <h5 class="card-title" style="width: 80%">
+                        {{ topic.title }}
+                      </h5>
                       <h6 class="card-subtitle mb-2 text-white-50">
                         {{ topic.subtitle }}
                       </h6>
@@ -92,6 +94,9 @@
                       </p>
                       <!-- <a href="#" class="card-link">Card link</a> -->
                       <!-- <a href="#" class="card-link">Another link</a> -->
+                    </div>
+                    <div class="ribbon ribbon-bookmark bg-orange shadow">
+                      <i class="fas fa-star text-warning"></i> 2000
                     </div>
                   </div>
                 </div>
@@ -115,20 +120,40 @@
                 >
                   <div
                     v-for="subtopic in topic.subtopics"
-                    class="card text-white subtopic subtopic-image border-0 shadow rounded-0 mb-5"
-                    :class="'subtopic-image--' + 'topic-' + topic.id"
+                    class="card subtopic subtopic-image border-0 shadow rounded-0 mb-1 bg-white"
                     :data-parent-topic="topic.id"
                     :data-subtopic="subtopic.id"
                     :key="topic.id + subtopic.id"
                   >
+                    <img
+                      src="https://picsum.photos/640/360"
+                      class="card-img-top rounded-0 shadow"
+                      alt="..."
+                    />
                     <div class="card-body">
-                      <h6 class="card-subtitle mb-2 text-white-50">
+                      <h6
+                        class="card-subtitle mb-2 t"
+                        :class="'text-color-' + topic.id"
+                      >
                         {{ topic.title }}
                       </h6>
-                      <h4 class="card-title">{{ subtopic.title }}</h4>
+                      <h5 class="card-title">
+                        {{ subtopic.title }}
+                      </h5>
+
                       <p class="card-text">
-                        {{ subtopic.desc }}
+                        <span
+                          class="badge badge-pill"
+                          :class="
+                            subtopic.isCompleted
+                              ? 'badge-secondary'
+                              : 'badge-success'
+                          "
+                        >
+                          <i class="fas fa-star text-warning"></i> 200
+                        </span>
                       </p>
+
                       <!-- <a href="#" class="card-link">Card link</a> -->
                       <!-- <a href="#" class="card-link">Another link</a> -->
                     </div>
@@ -144,19 +169,55 @@
             >
               <img
                 src="https://picsum.photos/640/360"
-                class="card-img-top rounded-0"
+                class="card-img-top rounded-0 shadow"
                 alt="..."
               />
               <div class="card-body">
-                <h6 class="card-subtitle mb-2 text-muted">
+                <h5
+                  class="card-subtitle mb-2 mt-1"
+                  :class="'text-color-' + currentTopic.id"
+                >
                   {{ currentTopic.title }}
-                </h6>
-                <h2 class="card-title">{{ currentSubtopic.title }}</h2>
+                </h5>
+                <h2 class="card-title">
+                  <strong>{{ currentSubtopic.title }}</strong>
+                </h2>
+                <hr />
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content. Some quick example text to
+                  build on the card title and make up the bulk of the card's
+                  content.
+                </p>
                 <p class="card-text">
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h6 class="card-subtitle mt-4 mb-1 text-dark">
+                  <strong>Key points</strong>
+                </h6>
+                <ul>
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Odio, repellat.
+                  </li>
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Odio, repellat.
+                  </li>
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Odio, repellat.
+                  </li>
+                </ul>
+                <div class="text-right">
+                  <a
+                    href="javascript:void(0)"
+                    @click="complete(currentTopic.id, currentSubtopic.id)"
+                    class="btn btn-primary"
+                    >READ MORE <i class="fas fa-arrow-right"></i
+                  ></a>
+                </div>
               </div>
             </div>
           </div>
@@ -177,15 +238,23 @@ module.exports = {
     return {
       currentTopicId: 1,
       currentSubtopicId: 1,
-      currentTopic: window.course.topics[0],
-      currentSubtopic: window.course.topics[0].subtopics[0],
-      topics: window.course.topics,
+      currentTopic: this.$store.state.topics[0],
+      currentSubtopic: this.$store.state.topics[0].subtopics[0],
     };
   },
-  mounted() {
+  mounted: function () {
     console.log("<Home/> mounted");
-
     this.renderSliders();
+    $('[data-toggle="tooltip"]').tooltip();
+  },
+  computed: {
+    topics: function () {
+      return this.$store.state.topics;
+    },
+
+    tokens: function () {
+      return this.$store.state.tokens;
+    },
   },
   methods: {
     renderSliders: function () {
@@ -299,6 +368,13 @@ module.exports = {
           .addClass("animate__animated animate__fadeInUp");
       });
     },
+    complete: function (topicId, subtopicId) {
+      this.$store.commit("increment", 200);
+      this.$store.commit("updateTopic", {
+        topicId: topicId,
+        subtopicId: subtopicId,
+      });
+    },
   },
 };
 </script>
@@ -329,27 +405,16 @@ module.exports = {
   transform: scale(0.9) translate3d(0, 5%, 0);
 }
 
-.topic-slider__slick .slick-slide,
-.subtopic-slider__slick .slick-slide {
-  margin-right: 1rem;
-}
-
-.card.subtopic {
-  transition: all 300ms ease;
-  /* opacity: 0.7; */
-  /* box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); */
-}
-
-.slick-center .card.subtopic,
-.slick-current .card.subtopic {
-  /* opacity: 1; */
-}
-
 .topic-slider__slick .slick-slide.slick-center,
 .topic-slider__slick .slick-slide.slick-current {
   opacity: 1;
   transform: scale(1) translate3d(0, 0, 0);
   margin-left: 15px;
+}
+
+.topic-slider__slick .slick-slide,
+.subtopic-slider__slick .slick-slide {
+  margin-right: 1rem;
 }
 
 .slick-initialized .slick-slide {

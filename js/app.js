@@ -1,16 +1,7 @@
-const Test = {
-    template: '<div>Test</div>'
-}
-
 const routes = [{
-        path: '/',
-        component: window.httpVueLoader('/components/pages/Home.vue')
-    },
-    {
-        path: '/test',
-        component: Test
-    }
-]
+    path: '/',
+    component: window.httpVueLoader('/components/pages/Home.vue'),
+}]
 
 const router = new VueRouter({
     routes: routes
@@ -19,12 +10,14 @@ const router = new VueRouter({
 var app = new Vue({
     el: '#app',
     router: router,
+    store: store,
+    data: function () {
+        return {
+            tokens: 1000
+        };
+    },
     mounted: function () {
         console.log('App mounted')
 
     }
-})
-
-$(function () {
-    $('[data-toggle="popover"]').popover()
 })
